@@ -35,7 +35,7 @@ body {
 }
 
 #navBar .options a:hover {
-  font-size: 1.05rem;
+  color: var(--myGreen);
   transition: .3s;
 }
 
