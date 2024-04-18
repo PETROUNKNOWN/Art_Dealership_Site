@@ -1,0 +1,109 @@
+:root {
+  --backGround: #1E1F26;
+  --lightbackGround: #323444;
+  --myWhite: #f5deb3;
+  --myGreen: #37ffb3;
+  --smoothBlue: #bcbfcf;
+  color: var(--myWhite);
+  background-color: var(--backGround);
+  transition: 1s;
+}
+
+
+
+
+#navBar .logo img {
+  height: 4rem;
+  transition: .4s;
+}
+
+#navBar .logo img:hover {
+  scale: 1.05;
+  transition: .4s;
+}
+
+#navBar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--myWhite) .1rem solid;
+}
+
+#navBar .options a {
+  text-decoration: none;
+  color: var(--myWhite);
+  margin: 1rem;
+  transition: .3s;
+}
+
+#navBar .options a:hover {
+  color: var(--myGreen);
+  transition: .3s;
+}
+
+h1 {
+  color: var(--myGreen);
+  font-size: 5rem;
+  text-align: center;
+}
+
+#card {
+  background-color: var(--lightbackGround);
+  border: var(--myGreen) 1px solid;
+  border-radius: 20px;
+  height: 52vh;
+  width: 60vw;
+  margin: 4rem auto ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.spaceLine {
+  border-bottom: var(--myGreen) solid 1px;
+  border-radius: 15px;
+  width: 50%;
+  margin: 1.2rem auto;
+  /* margin-left:50%; */
+  /* margin-right: 100%; */
+  /* height: 0.1rem; */
+}
+
+footer {
+  border-top: var(--myWhite) .1rem solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem;
+  /* flex-direction: column; */
+  color: var(--myWhite);
+}
+footer .privacy a {
+  text-decoration: underline;
+  color: var(--myGreen);
+  font-size: 1rem;
+  /* margin-bottom: 15rem; */
+  /* border: red 1px dotted; */
+}
+
+
+
+footer .footerLogo img {
+  height: 3rem;
+}
+
+@media (max-width: 915px) {
+  
+  #inventory a .bikeTile {
+    height: 19rem;
+    width: 100%;
+  }
+  #inventory a .bikeTile img {
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: -73px;
+  }
+}
