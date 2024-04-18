@@ -3,11 +3,14 @@
   --lightbackGround: #323444;
   --myWhite: #f5deb3;
   --myGreen: #37ffb3;
+  --smoothBlue: #bcbfcf;
+  color: var(--myWhite);
+  background-color: var(--backGround);
+  transition: 1s;
 }
 
-body {
-  background-color: var(--backGround);
-}
+
+
 
 #navBar .logo img {
   height: 4rem;
@@ -25,6 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--myWhite) .1rem solid;
+  margin-bottom: 6rem;
 }
 
 #navBar .options a {
@@ -35,83 +39,114 @@ body {
 }
 
 #navBar .options a:hover {
-  font-size: 1.05rem;
+  color: var(--myGreen);
   transition: .3s;
 }
 
-#inventory {
+.spaceLine {
+  border-bottom: var(--myWhite) solid 1px;
+  width: 50%;
   margin: 3rem auto 3rem auto;
+  /* margin-left:50%; */
+  /* margin-right: 100%; */
+  /* height: 0.1rem; */
+}
+
+#intro {
+  /* background-image: url(https://www.yamaha-racing.com/content/dam/yme-racing/eu/news/moto2/20240413-moto2-cota-saturday/_TIN3950.JPG); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
-  /* align-items: center; */
+  align-items: center;
+  /* justify-content: space-between; */
   /* flex-direction: column; */
-  transition: .5s;
 }
 
-
-#inventory a {
-  text-decoration: none;
-  color: var(--myWhite);
-  transition: .5s;
+#intro .title {
+  /* margin-left: -2rem; */
+  padding: 2rem;
+  backdrop-filter: blur(1px);
+  /* border: rgb(0, 255, 76) dotted 1px ; */
+  /* position: relative; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* right: 0; */
+  /* height: 100%; */
+  font-size: 3.5rem;
+  width: 12ch;
 }
 
-#inventory a .bikeTile {
+#intro img {
+  height: 100vh;
+  border-radius: 0 30px 30px 0;
+  /* width: 100vw; */
+  /* position: absolute; */
+}
+
+#intro .stats {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 25rem;
-  width: 35rem;
-  border: var(--myGreen) solid 0.1rem;
-  border-radius: 7px;
-  overflow: hidden;
-  margin: 3rem 0 3rem 0;
-  /* background-image: url(https://images.clickdealer.co.uk/vehicles/5546/5546895/large2/129541283.jpg); */
-  /* margin-top: 92px; */
-  transition: .5s;
-}
-
-#inventory a .bikeTile img {
+  justify-content: space-around;
+  /* border: rgb(255, 0, 0) dotted 1px ; */
   width: 100%;
-  margin-top: -100px;
-  margin-bottom: -56px;
-  /* position: absolute; */
-  /* object-fit: cover; */
-  /* margin-top: -50px; */
+  height: 100vh;
 }
 
-#inventory a .bikeTile:hover {
-  scale: 1.02;
-  transition: .5s;
-}
-
-#inventory a .bikeTile .details {
-  background-color: var(--lightbackGround);
+#intro .stats .bikesSold, .teamsSponsored, .safetyGearSold{
+  /* border: rgb(0, 255, 76) dotted 1px ; */
+  /* height: 10vh; */
+  margin: auto;
+  width: 100%;
   text-align: center;
-  /* text-decoration: underline var(--myGreen); */
-  width: 100%;
+  font-size: 2rem;
 }
 
-#inventory a .bikeTile .name {
-  background-color: var(--lightbackGround);
-  width: 100%;
-  height: 20%;
-  text-align: center;
-  z-index: 1;
-  margin-top: -2rem;
-  /* margin-bottom: -10rem; */
+#values {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: end; */
+  /* flex-direction: column; */
+}
+
+#values .valueText {
+  /* background-color: var(--smoothBlue); */
+  /* border: var(--lightbackGround) 2px solid; */
+  /* border-radius: 0 15px 15px 0; */
+  /* color: var(--backGround); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#values .valueText .one{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+#values .valueText .two{
+  font-size: 1.2rem;
+}
+
+#values img {
+  height: 100vh;
+  border-radius:30px 0 0 30px;
+  /* margin-left: -3rem; */
+  /* z-index: -1; */
+  /* width: 98vw; */
+  /* margin: auto; */
+  /* right: 0; */
   /* position: absolute; */
-  /* font-size: 2rem; */
-  /* top: 90px; */
 }
 
-#inventory a .bikeTile .name p {
-  font-size: 2em;
-  /* line-height: 0.1rem; */
-  /* margin-top: 1px; */
-}
 
 footer {
+  margin-top: 6rem;
   border-top: var(--myWhite) .1rem solid;
   display: flex;
   justify-content: space-between;
