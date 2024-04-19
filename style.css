@@ -9,9 +9,6 @@
   transition: 1s;
 }
 
-
-
-
 #navBar .logo img {
   height: 4rem;
   transition: .4s;
@@ -29,6 +26,7 @@
   align-items: center;
   border-bottom: var(--myWhite) .1rem solid;
   margin-bottom: 6rem;
+  font-family: Sarpanch;
 }
 
 #navBar .options a {
@@ -43,62 +41,176 @@
   transition: .3s;
 }
 
+#intro .stats .spaceLine {
+  border-bottom: var(--myWhite) solid 1px;
+  width: 50%;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
 .spaceLine {
   border-bottom: var(--myWhite) solid 1px;
   width: 50%;
   margin: 3rem auto 3rem auto;
-  /* margin-left:50%; */
-  /* margin-right: 100%; */
-  /* height: 0.1rem; */
+}
+
+.spaceLine_privacy {
+  border-bottom: var(--myWhite) solid 1px;
+  width: 40%;
+}
+
+#intro_privacy {
+  font-family: Smooch Sans;
+}
+
+.text_privacy {
+  width: 60ch;
+  font-size: 1.5rem;
+}
+
+#h1_inventory {
+  color: var(--myGreen);
+  margin: auto;
+  text-align: center;
+  font-family: Strait;
+  font-size: 5rem;
+}
+
+#inventory {
+  margin: 3rem auto 3rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  transition: .5s;
+  font-family: Sarpanch;
+}
+
+#inventory a {
+  text-decoration: none;
+  color: var(--myWhite);
+  transition: .5s;
+}
+
+#inventory a .bikeTile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 25rem;
+  width: 35rem;
+  border: var(--myGreen) solid 0.1rem;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 3rem 0 3rem 0;
+  transition: .5s;
+}
+
+#inventory a .bikeTile img {
+  width: 100%;
+  margin-top: -100px;
+  margin-bottom: -56px;
+}
+
+#inventory a .bikeTile:hover {
+  scale: 1.01;
+  transition: .5s;
+}
+
+#inventory a .bikeTile .details {
+  background-color: var(--lightbackGround);
+  text-align: center;
+  width: 100%;
+}
+
+#inventory a .bikeTile .name {
+  background-color: var(--lightbackGround);
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  z-index: 1;
+  margin-top: -2rem;
+}
+
+#inventory a .bikeTile .name p {
+  font-size: 2em;
+}
+
+.h1_contact {
+  color: var(--myGreen);
+  font-size: 5rem;
+  text-align: center;
+  font-family: Strait;
+}
+
+#card {
+  background-color: var(--lightbackGround);
+  border: var(--myGreen) 1px solid;
+  border-radius: 20px;
+  height: 60vh;
+  padding: 2rem;
+  width: 60vw;
+  margin: 4rem auto ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: Rationale;
+  font-size: 1.3rem;
+}
+
+.spaceLine_contact {
+  border-bottom: var(--myGreen) solid 1px;
+  border-radius: 15px;
+  width: 50%;
+  margin: 1.2rem auto;
+}
+
+.spaceLine_cookie {
+  border-bottom: var(--myWhite) solid 1px;
+  width: 50%;
+}
+
+#intro_cookie {
+  font-family: Smooch Sans;
+}
+
+.text_cookie {
+  width: 80ch;
+  font-size: 1.5rem;
 }
 
 #intro {
-  /* background-image: url(https://www.yamaha-racing.com/content/dam/yme-racing/eu/news/moto2/20240413-moto2-cota-saturday/_TIN3950.JPG); */
-  /* background-position: center; */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
   position: relative;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* flex-direction: column; */
 }
 
 #intro .title {
-  /* margin-left: -2rem; */
   padding: 2rem;
   backdrop-filter: blur(1px);
-  /* border: rgb(0, 255, 76) dotted 1px ; */
-  /* position: relative; */
   position: absolute;
   left: 0;
   top: 0;
-  /* right: 0; */
-  /* height: 100%; */
   font-size: 3.5rem;
   width: 12ch;
+  font-family: Sarpanch;
 }
 
 #intro img {
   height: 100vh;
   border-radius: 0 30px 30px 0;
-  /* width: 100vw; */
-  /* position: absolute; */
 }
 
 #intro .stats {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  /* border: rgb(255, 0, 0) dotted 1px ; */
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  font-family: Strait;
 }
 
 #intro .stats .bikesSold, .teamsSponsored, .safetyGearSold{
-  /* border: rgb(0, 255, 76) dotted 1px ; */
-  /* height: 10vh; */
   margin: auto;
   width: 100%;
   text-align: center;
@@ -106,22 +218,16 @@
 }
 
 #values {
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
-  /* align-items: end; */
-  /* flex-direction: column; */
 }
 
 #values .valueText {
-  /* background-color: var(--smoothBlue); */
-  /* border: var(--lightbackGround) 2px solid; */
-  /* border-radius: 0 15px 15px 0; */
-  /* color: var(--backGround); */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: Strait;
 }
 
 #values .valueText .one{
@@ -136,12 +242,6 @@
 #values img {
   height: 100vh;
   border-radius:30px 0 0 30px;
-  /* margin-left: -3rem; */
-  /* z-index: -1; */
-  /* width: 98vw; */
-  /* margin: auto; */
-  /* right: 0; */
-  /* position: absolute; */
 }
 
 
@@ -152,15 +252,13 @@ footer {
   justify-content: space-between;
   align-items: end;
   padding: 1rem;
-  /* flex-direction: column; */
   color: var(--myWhite);
+  font-family: Sarpanch;
 }
 footer .privacy a {
   text-decoration: underline;
   color: var(--myGreen);
   font-size: 1rem;
-  /* margin-bottom: 15rem; */
-  /* border: red 1px dotted; */
 }
 
 
