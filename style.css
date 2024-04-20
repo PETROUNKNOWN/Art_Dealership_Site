@@ -267,15 +267,109 @@ footer .footerLogo img {
   height: 3rem;
 }
 
-@media (max-width: 915px) {
+@media (max-width: 440px), (min-width: 420px)  {
   
-  #inventory a .bikeTile {
-    height: 19rem;
-    width: 100%;
+  
+
+  #navBar {
+    padding: 0rem;
+    /* border: red dotted 1px; */
   }
-  #inventory a .bikeTile img {
-    width: 100%;
-    margin-top: -100px;
-    margin-bottom: -73px;
+  
+  #navBar .options {
+    display: flex;
+    justify-content: center;
+    /* border: red dotted 1px; */
   }
+
+  #navBar .options a {
+    /* border: red dotted 1px; */
+    margin: 0 0.5rem;
+  }
+
+  #intro {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #intro .title {
+    text-align: center;
+    padding: auto;
+    backdrop-filter: blur(0px);
+    position: static;
+    /* left: 0; */
+    /* top: 0; */
+    font-size: 2rem;
+    width: auto;
+    font-family: Sarpanch;
+  }
+  
+  #intro img {
+    position: relative;
+    left: -1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0 30px 30px 0;
+    /* display: none; */
+  }
+  
+  #intro .stats {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: Strait;
+  }
+  
+  #intro .stats .bikesSold, .teamsSponsored, .safetyGearSold{
+    /* margin: auto; */
+    /* width: 100%; */
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  #values {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+ 
+  #values .valueText .one{
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  #values .valueText .two{
+    font-size: 1.2rem;
+  }
+  
+  #values img {
+    position: relative;
+    right: -1rem;
+    width: 95%;
+    height: auto;
+    border-radius:30px 0 0 30px;
+    /* display: none; */
+  }
+
+  #intro .stats .spaceLine {
+    /* border-bottom: var(--myWhite) solid 1px; */
+    width: 70%;
+    /* margin: 0.5rem auto 0.5rem auto; */
+  }
+
+  .spaceLine {
+    border-bottom: var(--myWhite) solid 2px;
+    border-radius: 10rem;
+    width: 70%;
+    /* margin: 3rem auto 3rem auto; */
+  }
+  
 }
