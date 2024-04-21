@@ -267,7 +267,7 @@ footer .footerLogo img {
   height: 3rem;
 }
 
-@media (max-width: 440px), (min-width: 420px)  {
+@media (max-width: 1080px)  {
   
   
 
@@ -371,5 +371,100 @@ footer .footerLogo img {
     width: 70%;
     /* margin: 3rem auto 3rem auto; */
   }
+
+  .h1_contact {
+    color: var(--myGreen);
+    font-size: 3rem;
+    text-align: center;
+    font-family: Strait;
+  }
+  
+  #card {
+    background-color: var(--lightbackGround);
+    border: var(--myGreen) 1px solid;
+    border-radius: 20px;
+    height: auto;
+    padding: 2rem;
+    width: auto;
+    margin: 4rem auto ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: Rationale;
+    font-size: 1.2rem;
+  }
+  
+  .spaceLine_contact {
+    border-bottom: var(--myGreen) solid 1px;
+    border-radius: 15px;
+    width: 80%;
+    /* margin: 2rem auto; */
+  }
+
+  #h1_inventory {
+    color: var(--myGreen);
+    margin: auto;
+    text-align: center;
+    font-family: Strait;
+    font-size: 3rem;
+  }
+  
+  #inventory {
+    /* margin: 3rem auto 3rem auto; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: .5s;
+    font-family: Sarpanch;
+  }
+  
+  #inventory a {
+    text-decoration: none;
+    color: var(--myWhite);
+    transition: .5s;
+  }
+  
+  #inventory a .bikeTile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border: var(--myGreen) solid 1px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 3rem 0 3rem 0;
+    transition: .5s;
+    /* display: none; */
+    /* z-index: 2; */
+  }
+  
+  #inventory a .bikeTile img {
+    /* transform: scale(0.9); */
+    width: 100%;
+    margin-top: -60px;
+    margin-bottom: -30px;
+    /* z-index: 1; */
+  }
+  
+
+  
+  #inventory a .bikeTile .name {
+    background-color: var(--lightbackGround);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 1;
+    margin-top: auto;
+  }
+  
+  #inventory a .bikeTile .name p {
+    margin: 0 auto;
+  }
   
 }
+
